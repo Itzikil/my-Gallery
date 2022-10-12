@@ -18,7 +18,7 @@ function renderPortfolio(projects) {
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/new portfolio/${proj.id}.png" alt="">
+            <img class="img-fluid little-img" src="img/new portfolio/${proj.id}.png" alt="">
           </a>
           <div class="portfolio-caption">
             <h4>${proj.name}</h4>
@@ -49,10 +49,10 @@ function renderPopup(projects) {
                                     <img class="img-fluid d-block mx-auto" src="img/new portfolio/${proj.id}.png" alt="">
                                         <p>${proj.desc}</p>
                                         <ul class="list-inline">
-                                            <li><a href="${proj.url}" target="_blank"><button class="btn">Check it Out</button></li></a>
+                                            <li><a href="${proj.url}" target="_blank"><button class="btn btn-primary mb-2">Check it Out</button></li></a>
                                             <li>Date: January 2017</li>
                                             <li>Client: Threads</li>
-                                            <li>Category: Illustration</li>
+                                            <li>Category: ${proj.labels}</li>
                                         </ul>
                                         <button class="btn btn-primary" data-dismiss="modal" type="button">
                                             <i class="fa fa-times"></i>
@@ -74,4 +74,3 @@ function sendEmail() {
     var message = $('#message').val().trim()
     open('https://mail.google.com/mail/?view=cm&fs=1&to='+emailAdress+'&su='+subject+'&body = '+message)
 }
-// if (!emailAdress || !subject) return
