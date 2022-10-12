@@ -50,7 +50,7 @@ function renderPopup(projects) {
                                         <p>${proj.desc}</p>
                                         <ul class="list-inline">
                                             <li><a href="${proj.url}" target="_blank"><button class="btn btn-primary mb-2">Check it Out</button></li></a>
-                                            <li>Date: January 2017</li>
+                                            <li>Date: ${proj.publishedAt}</li>
                                             <li>Client: Threads</li>
                                             <li>Category: ${proj.labels}</li>
                                         </ul>

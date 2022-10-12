@@ -7,7 +7,7 @@ var gProjs = [
         title: "eat those coockies",
         desc: "The nice old pacman game we all love",
         url: "https://itzikil.github.io/pacman/",
-        publishedAt: 1448693940000,
+        publishedAt: new Date().toDateString() ,
         labels: ["Matrixes", " Games"],
     },
     {
@@ -16,7 +16,7 @@ var gProjs = [
         title: "beware the mines!",
         desc: "The nice old minesweeper game we all love",
         url: "https://itzikil.github.io/MineSweeper/",
-        publishedAt: 1448693940000,
+        publishedAt: new Date().toDateString(),
         labels: ["Matrixes", " Games"],
     },
     {
@@ -25,7 +25,7 @@ var gProjs = [
         title: "New book shop!",
         desc: "We have all the books you need",
         url: "https://itzikil.github.io/book-shop/",
-        publishedAt: 1448693940000,
+        publishedAt: new Date().toDateString(),
         labels: ["shops"],
     },
     {
@@ -34,10 +34,11 @@ var gProjs = [
         title: "think of someone i'll find him",
         desc: "The jinny can find anyone you can think of, and if not this time, he will next time for sure",
         url: "https://itzikil.github.io/guess-me/",
-        publishedAt: 1448693940000,
+        publishedAt: new Date().toDateString(),
         labels: ["games"],
     },
 ]
+
 
 function getProj(){
     return gProjs
